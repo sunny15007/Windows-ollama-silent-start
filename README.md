@@ -47,4 +47,36 @@ ollama app.exe --hide --fast-startup
 声明
 本仓库仅用于分享该启动参数的使用方法，不包含任何 Ollama 的源代码或二进制文件。
 
+============================
+Ollama app.exe --hide --fast-startup
 
+Parameter Description
+--hide : Hide the main window on startup
+--fast-startup : Skip the splash screen animation for fast startup
+
+Usage
+Method 1: Command Line
+"%LOCALAPPDATA%\Programs\Ollama\ollama app.exe" --hide --fast-startup
+
+Method 2: Create a Shortcut (Recommended)
+Right-click on the desktop → "New" → "Shortcut"
+
+Enter the location:
+%LOCALAPPDATA%\Programs\Ollama\ollama app.exe --hide --fast-startup
+
+Name it "Ollama" and finish.
+
+From then on, double-click this shortcut to start silently.
+
+Effects
+✅ Completely silent, no pop-up windows
+✅ Background service starts normally
+✅ The llama icon appears in the system tray (bottom-right)
+✅ Full right-click menu available, can open settings interface
+✅ Clean exit without leftovers
+
+Discoverer
+@sunny15007
+
+Disclaimer
+This repository is only for sharing the usage of these startup parameters and does not contain any source code or binary files of Ollama.
